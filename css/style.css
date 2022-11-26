@@ -1,0 +1,275 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Source+Sans+Pro:ital,wght@1,900&display=swap');
+
+body{
+   font-family: "Lato";
+   color:#424551;
+}
+
+[class*="__container"]{
+   max-width: 1230px;
+   margin: 0 auto;
+}
+
+.article__container h1{
+   font-weight: 900;
+   font-size: 46px;
+   line-height: 130%;
+   color: #1E212C;
+   margin-top: 30px;
+   margin-bottom: 40px;
+}
+
+.article__main-text {
+   line-height: 160%;
+   color: #424551;
+   margin-bottom: 50px;
+   margin-left: 30px;
+}
+
+.articles__text  {
+   margin-bottom: 16px;
+   margin-left: 30px;
+   padding-left: 28px;
+   background: url('../img/check.png') 0 0 no-repeat;
+}
+
+.article__text h2 {
+   font-weight: 700;
+   font-size: 28px;
+   line-height: 150%;
+   margin-bottom: 30px;
+   margin-left: 30px;
+}
+
+.article__text h4{
+   font-weight: 700;
+   line-height: 150%;
+   font-size: 16px;
+   margin-bottom: 30px;
+   margin-top: 50px;
+   margin-left: 30px;
+}
+
+.article__text h5 {
+   font-weight: 900;
+   font-size: 46px;
+   line-height: 130%;
+   margin-bottom: 30px;
+   margin-left: 30px;
+
+}
+   
+.article__text p {
+   font-size: 20px;
+   line-height: 150%;
+   color: #787A80;
+   margin-bottom: 30px;
+   margin-left: 30px;
+}
+
+.article__text1 {
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 160%;
+   margin-bottom: 50px;
+   padding-left: 30px;
+   
+}
+.star {
+   background: url('../img/Star.png')0 4px no-repeat;
+   padding-left: 22px;
+}
+
+
+.play {
+   background: url('../img/Play.png') 0 4px no-repeat;
+   padding-left: 22px;
+
+}
+.students {
+   background: url('../img/Profile.png') 0 4px no-repeat;
+   padding-left: 22px;
+   
+}
+.article__main-text {
+   font-size: 16px;
+line-height: 160%;
+color: #424551;
+}
+
+
+
+
+.link {
+   background-color: chartreuse;
+   padding-left: 30px;
+}
+.link:hover {
+   color: rgb(225, 15, 96);
+   
+   
+
+}
+
+.block__item {
+   padding: 30px;
+   opacity: 0;
+   visibility: hidden;
+}
+.block__item{
+   opacity: 0;
+   visibility: hidden;
+}
+.block:hover .block__item {
+   visibility: visible;
+   opacity: 1;
+}
+
+.block__items {
+   background-color: aqua;
+   color: red;
+   padding: 30px;
+}
+
+.block__items:hover {
+   background-color: blue;
+}
+
+.block{
+   background-color: cornflowerblue;
+   color: #1E212C;
+}
+
+
+
+/* a:visited{
+
+   color: rgb(215, 24, 49);
+} */
+
+li{
+   margin-left: 20px;
+}
+.paragraf{
+   margin-bottom: 100px;
+}
+
+ul ul{
+   display: none;
+}
+ul li:hover ul{
+   display: block;
+}
+
+ul a:hover + ul{
+   display: block;
+}
+
+.blocks{
+   background-color: chocolate;
+   color: #fff;
+   margin-bottom: 40px;
+   padding-left: 30px;
+   display: none;
+}
+.blocks:target{
+   display: block;
+}
+
+.text{
+   background-color: darkcyan;
+   padding: 20px;
+   color: #fff;
+}
+.text p{
+   margin-bottom: 20px;
+}
+/* :first-child
+обращение к первому объекту кода.  
+(синтаксис-селектор, без пробелов, двоеточие и потом first-child)
+в нашем случае обращаемся к (р) первого параграфа. Еcли хотим обратится к любому первому объекту то надо ставить вместо (р), селектор звездочку (*)  */
+
+.text p:first-child{
+   color: coral;
+
+}
+
+/* first-of-type обращение к первому объекту кода к примеру (р) даже если он не первый */
+
+/* :last-of-type  тоже самое только обращение к последнему указаному объекту*/
+.text p:last-of-type{
+   text-transform: uppercase;
+   color: #000;
+   background-color: darkmagenta;
+}
+/* :nth-child() обращение к конкретному элементу в коде. В скобках указываем порядковый номер
+odd - это через один не парные
+even - это через один парные */
+
+.text p:nth-child(even){
+   background-color:red ;
+}
+
+/* :not(cелектор)
+псевдокласс исключения  */
+/* .text p:not(:last-child){
+   margin-bottom: 15px;
+здесь указано, что применяется ко всем р кроме последнего
+} */
+
+
+.blockk{
+   background-color: brown;
+   padding: 20px;
+   color: rgb(249, 249, 253);
+}
+.blockk__title{
+   font-weight: 700;
+   font-size: 40px;
+   margin-bottom: 20px;
+}
+.blockk__text{
+   line-height: 150%;
+   margin-bottom: 30px;
+}
+
+.blockk__link{
+   color: yellow;
+   display: inline-block;
+   margin-bottom: 20px;
+}
+
+.blockk__link:hover{
+   text-decoration: underline;
+}
+
+/* Псевдоэлементы (строчные)
+::befor{}
+::after{}
+Синтаксис такой: селектор, :: и псевдоэлемент.
+Для дальнейшей работы надо создать ячейку. Она делается при помощи css свойства content: Это обязательно.
+Псевдо элемент строится в границах объекта и добавляются до контента и после него.
+ */
+
+   span::before{
+      content: "(";
+   }
+   span::after{
+      content: ")";
+   }
+   /* div::before{
+      content: "(";
+   } */
+   /* div::after{
+      content: ")";
+   } */
+
+   
+   
+
+   
+      
+   
+   
+   
